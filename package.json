@@ -1,0 +1,23 @@
+{
+  "name": "test-keepa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satishkumar-dhule/test-keepa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satishkumar-dhule/test-keepa/issues"
+  },
+  "homepage": "https://github.com/satishkumar-dhule/test-keepa#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
