@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-  <div id="remote-container"></div>
-  <script>
-    var remoteUrl = "https://keepa.com/#!product/10-B089DMWSLG";
-    $("#remote-container").load(remoteUrl + " #graph");
-  </script>
-</body>
+  <head>
+    <title>Data from Express Server</title>
+  </head>
+  <body>
+    <div id="data"></div>
+
+    <script>
+        const dataDiv = document.getElementById("data");
+        fetch("/data")
+            .then(response => response.json())
+            .then(data => {
+                dataDiv.innerHTML = JSON.stringify(data);
+            })
+            .catch(error => {
+                dataDiv.innerHTML = "Error fetching data";
+            });
+    </script>
+  </body>
 </html>
-
-
